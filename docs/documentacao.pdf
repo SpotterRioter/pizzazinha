@@ -1,0 +1,307 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+2 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+3 0 obj
+<< /Type /Pages /Kids [6 0 R 8 0 R] /Count 2 >>
+endobj
+4 0 obj
+<< /Type /Catalog /Pages 3 0 R >>
+endobj
+5 0 obj
+<< /Length 4203 >>
+stream
+BT
+/F2 16 Tf
+1 0 0 1 60 756 Tm
+(DOCUMENTACAO TECNICA DE SOFTWARE) Tj
+/F1 6 Tf
+1 0 0 1 60 750 Tm
+() Tj
+/F2 12 Tf
+1 0 0 1 60 730 Tm
+(Sistema de Gestao de Pizzaria - SAEP) Tj
+/F1 11 Tf
+1 0 0 1 60 714 Tm
+(Projeto: Forno di Pietra - Pizzaria Artesanal. Versao 1.0. Data: 29/10/2026.) Tj
+/F1 6 Tf
+1 0 0 1 60 708 Tm
+() Tj
+/F1 11 Tf
+1 0 0 1 60 692 Tm
+(Tecnologias: PHP 8.2, Laravel 12, Blade, Tailwind CSS 4, SQLite \(desenvolvimento\) / MySQL) Tj
+/F1 11 Tf
+1 0 0 1 60 676 Tm
+(\(producao\).) Tj
+/F1 6 Tf
+1 0 0 1 60 670 Tm
+() Tj
+/F2 16 Tf
+1 0 0 1 60 646 Tm
+(1. REQUISITOS FUNCIONAIS) Tj
+/F1 6 Tf
+1 0 0 1 60 640 Tm
+() Tj
+/F1 11 Tf
+1 0 0 1 60 624 Tm
+(RF01 - Autenticacao de atendentes: o sistema deve permitir login com e-mail e senha, validando) Tj
+/F1 11 Tf
+1 0 0 1 60 608 Tm
+(credenciais e exibindo mensagem clara em caso de falha.) Tj
+/F1 6 Tf
+1 0 0 1 60 602 Tm
+() Tj
+/F1 11 Tf
+1 0 0 1 60 586 Tm
+(RF02 - Controle de sessao: a sessao do usuario logado deve expirar automaticamente apos 30) Tj
+/F1 11 Tf
+1 0 0 1 60 570 Tm
+(minutos de inatividade, redirecionando para a tela de login.) Tj
+/F1 6 Tf
+1 0 0 1 60 564 Tm
+() Tj
+/F1 11 Tf
+1 0 0 1 60 548 Tm
+(RF03 - Tela principal: deve exibir o nome do usuario logado, menu de acesso aos modulos) Tj
+/F1 11 Tf
+1 0 0 1 60 532 Tm
+(\(Clientes, Pizzas, Pedidos\) e opcao de logout.) Tj
+/F1 6 Tf
+1 0 0 1 60 526 Tm
+() Tj
+/F1 11 Tf
+1 0 0 1 60 510 Tm
+(RF04 - Gerenciamento de clientes: cadastrar, listar, buscar \(por nome, CPF, e-mail, telefone ou) Tj
+/F1 11 Tf
+1 0 0 1 60 494 Tm
+(cidade\) e editar clientes.) Tj
+/F1 6 Tf
+1 0 0 1 60 488 Tm
+() Tj
+/F1 11 Tf
+1 0 0 1 60 472 Tm
+(RF05 - Protecao de dados pessoais \(LGPD\): o CPF do cliente deve ser armazenado de forma) Tj
+/F1 11 Tf
+1 0 0 1 60 456 Tm
+(criptografada \(AES-256\) e um hash HMAC-SHA256 deve ser usado para busca e prevencao de) Tj
+/F1 11 Tf
+1 0 0 1 60 440 Tm
+(duplicidade. A listagem exibe o CPF mascarado.) Tj
+/F1 6 Tf
+1 0 0 1 60 434 Tm
+() Tj
+/F1 11 Tf
+1 0 0 1 60 418 Tm
+(RF06 - Gerenciamento de pizzas: cadastrar sabores com ingredientes, tamanho e preco; marcar) Tj
+/F1 11 Tf
+1 0 0 1 60 402 Tm
+(disponibilidade; registrar itens personalizados; associar ao pedido.) Tj
+/F1 6 Tf
+1 0 0 1 60 396 Tm
+() Tj
+/F1 11 Tf
+1 0 0 1 60 380 Tm
+(RF07 - Gerenciamento de pedidos: cadastrar pedido associando cliente e pizza, quantidade,) Tj
+/F1 11 Tf
+1 0 0 1 60 364 Tm
+(status, data do pedido e data de entrega/agendamento.) Tj
+/F1 6 Tf
+1 0 0 1 60 358 Tm
+() Tj
+/F1 11 Tf
+1 0 0 1 60 342 Tm
+(RF08 - Listagem de pedidos: exibir pedidos ordenados por ano da data do pedido \(mais recente) Tj
+/F1 11 Tf
+1 0 0 1 60 326 Tm
+(primeiro\), trazendo todos os dados do cliente e da pizza associada.) Tj
+/F1 6 Tf
+1 0 0 1 60 320 Tm
+() Tj
+/F1 11 Tf
+1 0 0 1 60 304 Tm
+(RF09 - Atualizacao de datas: permitir editar e atualizar a data de um pedido \(data do pedido e) Tj
+/F1 11 Tf
+1 0 0 1 60 288 Tm
+(data de entrega\) salvando no banco.) Tj
+/F1 6 Tf
+1 0 0 1 60 282 Tm
+() Tj
+/F1 11 Tf
+1 0 0 1 60 266 Tm
+(RF10 - Calculo automatico do valor total do pedido a partir do preco vigente da pizza e da) Tj
+/F1 11 Tf
+1 0 0 1 60 250 Tm
+(quantidade.) Tj
+/F1 6 Tf
+1 0 0 1 60 244 Tm
+() Tj
+/F2 16 Tf
+1 0 0 1 60 220 Tm
+(2. REQUISITOS NAO FUNCIONAIS) Tj
+/F1 6 Tf
+1 0 0 1 60 214 Tm
+() Tj
+/F1 11 Tf
+1 0 0 1 60 198 Tm
+(RNF01 - Uso de PHP no back-end e MySQL como SGBD em producao \(SQLite em desenvolvimento\).) Tj
+/F1 6 Tf
+1 0 0 1 60 192 Tm
+() Tj
+/F1 11 Tf
+1 0 0 1 60 176 Tm
+(RNF02 - Expiracao automatica de sessao apos 30 minutos de inatividade.) Tj
+/F1 6 Tf
+1 0 0 1 60 170 Tm
+() Tj
+/F1 11 Tf
+1 0 0 1 60 154 Tm
+(RNF03 - Criptografia do CPF conforme LGPD \(AES-256 + HMAC-SHA256\).) Tj
+/F1 6 Tf
+1 0 0 1 60 148 Tm
+() Tj
+/F1 11 Tf
+1 0 0 1 60 132 Tm
+(RNF04 - Interface responsiva com Tailwind CSS 4, em tons artesanais \(ambar/stone\).) Tj
+/F1 6 Tf
+1 0 0 1 60 126 Tm
+() Tj
+/F1 11 Tf
+1 0 0 1 60 110 Tm
+(RNF05 - Validacao de dados de entrada e mensagens de erro claras.) Tj
+/F1 6 Tf
+1 0 0 1 60 104 Tm
+() Tj
+/F1 11 Tf
+1 0 0 1 60 88 Tm
+(RNF06 - Paginacao nas listagens e busca com filtro por termo.) Tj
+/F1 6 Tf
+1 0 0 1 60 82 Tm
+() Tj
+/F1 11 Tf
+1 0 0 1 60 66 Tm
+(RNF07 - Documentacao tecnica e diagrama entidade-relacionamento \(DER\).) Tj
+/F1 6 Tf
+1 0 0 1 60 60 Tm
+() Tj
+ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 3 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 5 0 R >>
+endobj
+7 0 obj
+<< /Length 1928 >>
+stream
+BT
+/F2 16 Tf
+1 0 0 1 60 780 Tm
+(3. REGRAS DE NEGOCIO) Tj
+/F1 6 Tf
+1 0 0 1 60 774 Tm
+() Tj
+/F1 11 Tf
+1 0 0 1 60 758 Tm
+(RB01 - Todas as tabelas possuem ao menos 3 registros iniciais \(usuarios, clientes, pizzas,) Tj
+/F1 11 Tf
+1 0 0 1 60 742 Tm
+(pedidos\).) Tj
+/F1 6 Tf
+1 0 0 1 60 736 Tm
+() Tj
+/F1 11 Tf
+1 0 0 1 60 720 Tm
+(RB02 - Um cliente nao pode ser cadastrado com CPF duplicado.) Tj
+/F1 6 Tf
+1 0 0 1 60 714 Tm
+() Tj
+/F1 11 Tf
+1 0 0 1 60 698 Tm
+(RB03 - Um pedido deve estar associado a um cliente e a uma pizza existentes.) Tj
+/F1 6 Tf
+1 0 0 1 60 692 Tm
+() Tj
+/F1 11 Tf
+1 0 0 1 60 676 Tm
+(RB04 - A data de entrega nao pode ser anterior a data do pedido.) Tj
+/F1 6 Tf
+1 0 0 1 60 670 Tm
+() Tj
+/F1 11 Tf
+1 0 0 1 60 654 Tm
+(RB05 - O valor total do pedido e calculado pelo sistema \(preco unitario x quantidade\).) Tj
+/F1 6 Tf
+1 0 0 1 60 648 Tm
+() Tj
+/F1 11 Tf
+1 0 0 1 60 632 Tm
+(RB06 - Pedidos cancelados nao entram no faturamento.) Tj
+/F1 6 Tf
+1 0 0 1 60 626 Tm
+() Tj
+/F2 16 Tf
+1 0 0 1 60 602 Tm
+(4. MODELO DE DADOS \(DER\)) Tj
+/F1 6 Tf
+1 0 0 1 60 596 Tm
+() Tj
+/F1 11 Tf
+1 0 0 1 60 580 Tm
+(Tabelas: usuarios \(PK id\), clientes \(PK id\), pizzas \(PK id\), pedidos \(PK id, FK cliente_id, FK) Tj
+/F1 11 Tf
+1 0 0 1 60 564 Tm
+(pizza_id\).) Tj
+/F1 6 Tf
+1 0 0 1 60 558 Tm
+() Tj
+/F1 11 Tf
+1 0 0 1 60 542 Tm
+(Relacionamentos: clientes 1:N pedidos; pizzas 1:N pedidos. O CPF e armazenado criptografado e) Tj
+/F1 11 Tf
+1 0 0 1 60 526 Tm
+(possui hash para busca.) Tj
+/F1 6 Tf
+1 0 0 1 60 520 Tm
+() Tj
+/F2 16 Tf
+1 0 0 1 60 496 Tm
+(5. AUTENTICACAO E SESSAO) Tj
+/F1 6 Tf
+1 0 0 1 60 490 Tm
+() Tj
+/F1 11 Tf
+1 0 0 1 60 474 Tm
+(Login valida e-mail/senha e status ativo. Em falha, exibe alerta de erro. Em sucesso, regenera) Tj
+/F1 11 Tf
+1 0 0 1 60 458 Tm
+(a sessao e grava login_at e ultima_atividade. Middleware sessao.ativa verifica inatividade e) Tj
+/F1 11 Tf
+1 0 0 1 60 442 Tm
+(expira apos 30 minutos.) Tj
+/F1 6 Tf
+1 0 0 1 60 436 Tm
+() Tj
+ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 3 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 7 0 R >>
+endobj
+xref
+0 9
+0000000000 65535 f 
+0000000009 00000 n 
+0000000079 00000 n 
+0000000154 00000 n 
+0000000217 00000 n 
+0000000266 00000 n 
+0000004520 00000 n 
+0000004656 00000 n 
+0000006635 00000 n 
+trailer
+<< /Size 9 /Root 4 0 R >>
+startxref
+6771
+%%EOF
